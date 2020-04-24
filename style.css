@@ -125,15 +125,17 @@ img{
 }
 
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 376px){
   .grid{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
     margin: auto;
-   
+    width: auto;
+    padding: 10px;
   }
+
   .item{
     width: 300px;
   }
@@ -141,7 +143,6 @@ img{
     border-top: 3px solid var(--Cyan);
     margin: auto;
   }
-  
   .item:nth-child(4){
     border-top: 3px solid var(--Blue);
     margin: auto;
