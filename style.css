@@ -40,18 +40,17 @@ h2{
   color: var(--VeryDarkBlue);
 }
 
+h4{
+  color: var(--VeryDarkBlue);
+  font-weight: 600;
+}
+
 p{
   font-weight: 300;
   color: var(--GrayishBlue);
   padding: 15px 0;
 }
 
-img{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 20px;
-}
 
 main{
   padding: 20px;
@@ -75,16 +74,30 @@ main{
   margin: auto;
 }
 
+.grid{
+  padding: 10px;
+}
 .item{
   background: #ffffff;
-  margin: 20px 0;
-  padding: 20px;
+  margin: 25px 0;
+  padding: 25px;
+  height: 230px;
   box-shadow: 5px 10px 20px -10px var(--GrayishBlue);
   border-radius: 5px;
   border-top: 3px solid red;
   position: relative;
 }
 
+.item p{
+  font-size: 13px;
+}
+
+img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 25px;
+}
 
 @media screen and (min-width:375px){
   body{
