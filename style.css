@@ -62,7 +62,7 @@ main{
 
 .title p{
   padding: 20px;
-  /* width: 40px; */
+  width: 450px;
   margin: auto;
 }
 
@@ -73,7 +73,7 @@ main{
 
 .grid{
   padding: 10px;
-  flex: 0 1 auto;
+  margin: auto;
 }
 
 .item{
@@ -81,6 +81,7 @@ main{
   margin: 25px auto;
   padding: 25px;
   height: 230px;
+  width: 300px;
   box-shadow: 5px 10px 20px -10px var(--GrayishBlue);
   border-radius: 5px;
   position: relative;
@@ -127,42 +128,37 @@ img{
 
 @media screen and (min-width: 376px){
   .grid{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
     margin: auto;
     width: auto;
     padding: 10px;
   }
 
-  .item{
-    width: 300px;
-  }
   .item:nth-child(1){
     border-top: 3px solid var(--Cyan);
-    margin: auto;
+    /* margin: auto; */
   }
   .item:nth-child(4){
     border-top: 3px solid var(--Blue);
-    margin: auto;
-  }
+    /* margin: auto; */
+  } 
 }
 
 @media screen and (min-width: 720px){
   .grid{
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 250px 250px;
+    grid-gap: 10px;
+    justify-content: center;
   }
+
   .item:nth-child(1){
     border-top: 3px solid var(--Cyan);
-    margin: auto;
+    /* margin: 150px 0; */
   }
   
   .item:nth-child(4){
     border-top: 3px solid var(--Blue);
-    margin: auto;
+    /* margin: auto; */
   }
 }
