@@ -33,7 +33,6 @@ body {
   font-weight: 600;
 }
 
-
 h2{
   font-weight: 200;
   font-size: 25px;
@@ -62,10 +61,8 @@ main{
 
 .title p{
   padding: 10px;
-  /* width: 350px; */
   margin: auto;
 }
-
 
 .grid{
   padding: 10px;
@@ -99,7 +96,6 @@ main{
   border-top: 3px solid var(--Blue);
 }
 
-
 .item p{
   font-size: 13px;
 }
@@ -129,16 +125,6 @@ img{
     grid-gap: 0px 10px;
     grid-template-columns: repeat(2, 300px);
   }
-  
-  
-  .item:nth-child(1){
-    border-top: 3px solid var(--Cyan);
-    /* margin: auto; */
-  }
-  .item:nth-child(4){
-    border-top: 3px solid var(--Blue);
-    /* margin: auto; */
-  } 
 }
 
 @media screen and (min-width: 950px){
@@ -163,7 +149,6 @@ img{
     grid-row: 1 / span 2;
     border-top: 3px solid var(--Cyan);
     margin: auto;
-    /* margin: 150px 0; */
   }
 
   .item:nth-child(3){
